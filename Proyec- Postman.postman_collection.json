@@ -1,0 +1,928 @@
+{
+	"info": {
+		"_postman_id": "40102e3d-ad63-4462-b26b-7cb34be5c108",
+		"name": "Proyec- Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "proyectoVentaOnline",
+			"item": [
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "user6",
+											"type": "default"
+										},
+										{
+											"key": "surname",
+											"value": "ss6",
+											"type": "default"
+										},
+										{
+											"key": "username",
+											"value": "US6",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "user6@kinal.edu.gt",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "default"
+										},
+										{
+											"key": "phone",
+											"value": "56987433",
+											"type": "default"
+										},
+										{
+											"key": "role",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/user/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "register Admin",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNFIiwiZW1haWwiOiJjZXNjb2Jhci0yMDE3MzUzQGtpbmFsLmVkdS5ndCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NjgxMTI4MywiZXhwIjoxNjQ2ODE4NDgzfQ.0iuh51tEoNJmVuDJ2lEWgqEXeQswFuPUx50hFsKrm_Q",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "user3",
+											"type": "default"
+										},
+										{
+											"key": "surname",
+											"value": "Escobar",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "CCAD",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "cescobar-2017353@kinal.edu.gt",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": "3256",
+											"type": "default"
+										},
+										{
+											"key": "phone",
+											"value": "56489875",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "ADMIN",
+											"type": "default"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/user/registAdmin",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"registAdmin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Carlos",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "surname",
+											"value": "Escobar",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "US6",
+											"type": "default"
+										},
+										{
+											"key": "email",
+											"value": "user6@kinal.edu.gt",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "1234",
+											"type": "default"
+										},
+										{
+											"key": "phone",
+											"value": "56489875",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "role",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/user/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Editar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNFIiwiZW1haWwiOiJjZXNjb2Jhci0yMDE3MzUzQGtpbmFsLmVkdS5ndCIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTY0NjgxNDUxNSwiZXhwIjoxNjQ2ODIxNzE1fQ.UGE6SVjIicgIOSPvnd8DJgMZrlai6VQv9CpleF1O-CQ",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "username",
+											"value": "CCEE",
+											"type": "default"
+										},
+										{
+											"key": "password",
+											"value": "123",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "CCEAS-2017353@kinal.edu.gt",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/user/update/6226f76ac381936705472a7e",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"update",
+										"6226f76ac381936705472a7e"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODYwNzAxLCJleHAiOjE2NDY4Njc5MDF9.J7c2RMbdKdN5nJyA8mEJ95mX3ADCHvRZlApWvp_sHWk",
+										"type": "default"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/user/delete/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"user",
+										"delete",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Categorias",
+					"item": [
+						{
+							"name": "Save",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODczNzE1LCJleHAiOjE2NDY4ODA5MTV9.3KSMs_7wigsesYdJHn1-2TRf1J5P95Azi4q83ezbk2k",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Default",
+											"type": "default"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/categoria/saveCategoria",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"saveCategoria"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getCategoria",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODQ5NTg5LCJleHAiOjE2NDY4NTY3ODl9.j7qXs2sKDTyvYqhHKJX9JxUNAVGCAy5yF85P5427hUQ",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/categoria/getCategorias",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"getCategorias"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "searchCategoria",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODQ5NTg5LCJleHAiOjE2NDY4NTY3ODl9.j7qXs2sKDTyvYqhHKJX9JxUNAVGCAy5yF85P5427hUQ",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "zapatoss",
+											"type": "default"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/categoria/searchCategoria",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"searchCategoria"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODQ5NTg5LCJleHAiOjE2NDY4NTY3ODl9.j7qXs2sKDTyvYqhHKJX9JxUNAVGCAy5yF85P5427hUQ",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Component",
+											"type": "default"
+										},
+										{
+											"key": "precio",
+											"value": "900",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "stok",
+											"value": "3",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/categoria/updateCategoria/6228e9181cc7193e7c19a70c",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"updateCategoria",
+										"6228e9181cc7193e7c19a70c"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODczNzE1LCJleHAiOjE2NDY4ODA5MTV9.3KSMs_7wigsesYdJHn1-2TRf1J5P95Azi4q83ezbk2k",
+										"type": "default"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "default",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/categoria/deleteCategoria/62294d3e223bc5cf92eb878a",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"categoria",
+										"deleteCategoria",
+										"62294d3e223bc5cf92eb878a"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Productos",
+					"item": [
+						{
+							"name": "Save",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODQ4MzM1LCJleHAiOjE2NDY4NTU1MzV9.jCpdfJFSgymHFQZLSNHkIu1_m8PWeAf-oPe5tvoFW2g",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "audifono",
+											"type": "default"
+										},
+										{
+											"key": "precio",
+											"value": "100",
+											"type": "default"
+										},
+										{
+											"key": "stock",
+											"value": "6",
+											"type": "default"
+										},
+										{
+											"key": "categoria",
+											"value": "6228faed39f87572673352aa",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/producto/saveProducto",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"producto",
+										"saveProducto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getproducto",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODcwOTgyLCJleHAiOjE2NDY4NzgxODJ9.WMjHd0LrL8vUNdDAAnGvbAdUrJz5BQ7hxdWpS-CP214",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/producto/getProductos",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"producto",
+										"getProductos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "searchProducto",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODcwOTgyLCJleHAiOjE2NDY4NzgxODJ9.WMjHd0LrL8vUNdDAAnGvbAdUrJz5BQ7hxdWpS-CP214",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "audifonos",
+											"type": "default"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/producto/searchProducto",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"producto",
+										"searchProducto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODQ4Njk5LCJleHAiOjE2NDY4NTU4OTl9.bOlliO9apEqjENQw1_cGfjd4vtssWGM1DBg4qZ4p8yU",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "audifono",
+											"type": "default"
+										},
+										{
+											"key": "precio",
+											"value": "200",
+											"type": "default"
+										},
+										{
+											"key": "stock",
+											"value": "150",
+											"type": "default"
+										},
+										{
+											"key": "categoria",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/producto/updateProducto/6228fb2139f87572673352ac",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"producto",
+										"updateProducto",
+										"6228fb2139f87572673352ac"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI2Zjc2YWMzODE5MzY3MDU0NzJhN2UiLCJuYW1lIjoiQ2FybG9zIiwic3VybmFtZSI6IkVzY29iYXIiLCJ1c2VybmFtZSI6IkNDRUUiLCJlbWFpbCI6ImNlc2NvYmFyLTIwMTczNTNAa2luYWwuZWR1Lmd0Iiwicm9sZSI6IkFETUlOIiwiaWF0IjoxNjQ2ODcyNDQ1LCJleHAiOjE2NDY4Nzk2NDV9.jdrbZnhdjGuXJCwChW8hxmE7UJ8gAKOETjMI0Ylf8XI",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/producto/deleteProducto/",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"producto",
+										"deleteProducto",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "CarritoCompras",
+					"item": [
+						{
+							"name": "saveC",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI5YTAxNTkxYmViOGYwODQ3ZDU2ZTQiLCJuYW1lIjoidXNlcjYiLCJzdXJuYW1lIjoic3M2IiwidXNlcm5hbWUiOiJVUzYiLCJlbWFpbCI6InVzZXI2QGtpbmFsLmVkdS5ndCIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE2NDY4OTUxNDMsImV4cCI6MTY0NjkwMjM0M30.VcFVba-93oIMjDC7CjD4Cr7b0fxkg4hhjgdyf933BHY",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "productos",
+											"value": "6228fb2139f87572673352ac",
+											"type": "default"
+										},
+										{
+											"key": "quantity",
+											"value": "10",
+											"type": "default"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/carrito/saveCarritoCom",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"carrito",
+										"saveCarritoCom"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Factura",
+					"item": [
+						{
+							"name": "save",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjI5YTAxNTkxYmViOGYwODQ3ZDU2ZTQiLCJuYW1lIjoidXNlcjYiLCJzdXJuYW1lIjoic3M2IiwidXNlcm5hbWUiOiJVUzYiLCJlbWFpbCI6InVzZXI2QGtpbmFsLmVkdS5ndCIsInJvbGUiOiJDTElFTlQiLCJpYXQiOjE2NDY4OTk0MTUsImV4cCI6MTY0NjkwNjYxNX0.wEzVWltcP-0FTVo_B2Yct8UCqUsJGpgC_QhuPcZnGPE",
+										"type": "default"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "",
+											"value": "",
+											"type": "default",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:3000/factura/saveCompra",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"factura",
+										"saveCompra"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
